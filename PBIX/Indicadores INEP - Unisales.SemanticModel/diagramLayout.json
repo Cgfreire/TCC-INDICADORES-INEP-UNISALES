@@ -1,0 +1,113 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1227.298112725397,
+            "y": 534.00459411931661
+          },
+          "nodeIndex": "dw DimAnoCenso",
+          "nodeLineageTag": "b813f007-982c-4a8f-a105-0ce87529b83c",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 637.73066406134456,
+            "y": 531.64259618482174
+          },
+          "nodeIndex": "dw DimCurso",
+          "nodeLineageTag": "8e4b1260-40f1-4326-be35-4cfff8e42bc7",
+          "size": {
+            "height": 397.24398715948382,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 308.00916245124836,
+            "y": 538.832815808663
+          },
+          "nodeIndex": "dw DimEnderecoInstituicao",
+          "nodeLineageTag": "27397014-fdea-4058-84f8-10859f164ccc",
+          "size": {
+            "height": 338.27999441716679,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 936.822248234427,
+            "y": 528.6086745406169
+          },
+          "nodeIndex": "dw DimInstituicao",
+          "nodeLineageTag": "c26412f1-ec7b-465e-8220-c662fe827640",
+          "size": {
+            "height": 349.32666015336133,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 26.647762516836337,
+            "y": 543
+          },
+          "nodeIndex": "dw DimLocalOferta",
+          "nodeLineageTag": "a34b2f55-c4b8-4ec2-9e50-9d0d74f8e38f",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 704.36106729885842,
+            "y": 35.159720935002269
+          },
+          "nodeIndex": "dw FatoCursos",
+          "nodeLineageTag": "d384456f-c5a3-457d-ab07-839551217a66",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 370.80425279183748,
+            "y": 40.853050116331588
+          },
+          "nodeIndex": "dw FatoIES",
+          "nodeLineageTag": "ed67c2e5-61e1-4c29-8228-56f85930cfc0",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 6
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 70.95554390096882,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}

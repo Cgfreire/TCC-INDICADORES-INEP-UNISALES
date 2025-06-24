@@ -1,0 +1,115 @@
+table 'dw DimCurso'
+	lineageTag: 8e4b1260-40f1-4326-be35-4cfff8e42bc7
+
+	column IdDimCurso
+		dataType: int64
+		formatString: 0
+		lineageTag: b4e43561-64e6-45fe-bb4c-255fe45da5ed
+		summarizeBy: none
+		sourceColumn: IdDimCurso
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ano_Censo
+		dataType: int64
+		formatString: 0
+		lineageTag: 37cf85b5-1f46-4ec5-b47e-5d78aac879ca
+		summarizeBy: none
+		sourceColumn: Ano_Censo
+
+		annotation SummarizationSetBy = Automatic
+
+	column CodigoIES
+		dataType: int64
+		formatString: 0
+		lineageTag: 73fc13ce-35df-4a88-b86f-35483602a121
+		summarizeBy: none
+		sourceColumn: CodigoIES
+
+		annotation SummarizationSetBy = Automatic
+
+	column CodigoCurso
+		dataType: int64
+		formatString: 0
+		lineageTag: e36c778f-00ad-4998-a6f5-339636530f3c
+		summarizeBy: none
+		sourceColumn: CodigoCurso
+
+		annotation SummarizationSetBy = Automatic
+
+	column NomeCurso
+		dataType: string
+		lineageTag: 8559e5d4-5b0e-4854-8c9f-31249c032dcd
+		summarizeBy: none
+		sourceColumn: NomeCurso
+
+		annotation SummarizationSetBy = Automatic
+
+	column NomeAreaGeral
+		dataType: string
+		lineageTag: cc50406b-59fa-44c1-b211-3f9df065b72d
+		summarizeBy: none
+		sourceColumn: NomeAreaGeral
+
+		annotation SummarizationSetBy = Automatic
+
+	column NomeAreaEspecifica
+		dataType: string
+		lineageTag: 6077f514-7052-43f1-8033-77c24670614d
+		summarizeBy: none
+		sourceColumn: NomeAreaEspecifica
+
+		annotation SummarizationSetBy = Automatic
+
+	column NomeAreaDetalhada
+		dataType: string
+		lineageTag: e22fded3-03fb-4c9a-a616-b4b4633ff0d5
+		summarizeBy: none
+		sourceColumn: NomeAreaDetalhada
+
+		annotation SummarizationSetBy = Automatic
+
+	column TipograuAcademico
+		dataType: string
+		lineageTag: 14f673e8-8092-4b87-aba9-cfbead33076f
+		summarizeBy: none
+		sourceColumn: TipograuAcademico
+
+		annotation SummarizationSetBy = Automatic
+
+	column NivelAcademico
+		dataType: string
+		lineageTag: 798a4887-abd1-4a10-afdb-30aab196a7c1
+		summarizeBy: none
+		sourceColumn: NivelAcademico
+
+		annotation SummarizationSetBy = Automatic
+
+	column Modalidade
+		dataType: string
+		lineageTag: c56ace6f-5fb1-4783-b017-814f3f5fae7a
+		summarizeBy: none
+		sourceColumn: Modalidade
+
+		annotation SummarizationSetBy = Automatic
+
+	column FlGratuito
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: dba5c231-cf9a-4362-8ebe-12a67dec616f
+		summarizeBy: none
+		sourceColumn: FlGratuito
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'dw DimCurso' = m
+		mode: import
+		source =
+				let
+				    Fonte = Sql.Database("CAIO_G_FREIRE", "DW_INDICADORES_INEP"),
+				    dw_DimCurso = Fonte{[Schema="dw",Item="DimCurso"]}[Data]
+				in
+				    dw_DimCurso
+
+	annotation PBI_ResultType = Table
+

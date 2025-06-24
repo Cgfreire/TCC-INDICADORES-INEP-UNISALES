@@ -1,0 +1,40 @@
+table 'dw DimLocalOferta'
+	lineageTag: a34b2f55-c4b8-4ec2-9e50-9d0d74f8e38f
+
+	column IdDimLocalOferta
+		dataType: int64
+		formatString: 0
+		lineageTag: 092f6930-9088-486b-85ee-8c1235e0d4f9
+		summarizeBy: none
+		sourceColumn: IdDimLocalOferta
+
+		annotation SummarizationSetBy = Automatic
+
+	column CodigoLocalOferta
+		dataType: int64
+		formatString: 0
+		lineageTag: 21db3531-b8d5-4739-b268-bc28737b7cfe
+		summarizeBy: none
+		sourceColumn: CodigoLocalOferta
+
+		annotation SummarizationSetBy = Automatic
+
+	column LocalOFerta
+		dataType: string
+		lineageTag: 5e8de53b-314b-4c16-8e72-977fe76709b8
+		summarizeBy: none
+		sourceColumn: LocalOFerta
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'dw DimLocalOferta' = m
+		mode: import
+		source =
+				let
+				    Fonte = Sql.Database("CAIO_G_FREIRE", "DW_INDICADORES_INEP"),
+				    dw_DimLocalOferta = Fonte{[Schema="dw",Item="DimLocalOferta"]}[Data]
+				in
+				    dw_DimLocalOferta
+
+	annotation PBI_ResultType = Table
+

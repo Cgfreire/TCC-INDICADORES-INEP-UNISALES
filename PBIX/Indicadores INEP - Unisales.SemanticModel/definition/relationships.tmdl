@@ -1,0 +1,30 @@
+relationship fdec7515-1317-b4c0-5854-2ad27a33fef4
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'dw FatoCursos'.IdDimAnoCenso
+	toColumn: 'dw DimAnoCenso'.IdDimAnoCenso
+
+relationship 44bf67c2-5f37-5133-49e7-f754f721b1f5
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'dw FatoCursos'.IdDimCurso
+	toColumn: 'dw DimCurso'.IdDimCurso
+
+relationship 16e0fe18-b3e4-29e2-9b03-ea4cfbad4c91
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'dw FatoCursos'.IdDimEnderecoInstituicao
+	toColumn: 'dw DimEnderecoInstituicao'.IdDimEnderecoInstituicao
+
+relationship b8bc4123-3b0b-5841-6df8-ecd8eb9930fe
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'dw FatoCursos'.IdDimInstituicao
+	toColumn: 'dw DimInstituicao'.IdDimInstituicao
+
+relationship 98375421-e097-77a6-639a-8c5a4174b5f7
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'dw FatoIES'.IdDimAnoCenso
+	toColumn: 'dw DimAnoCenso'.IdDimAnoCenso
+
+relationship 8232b715-170a-ad89-db1e-5751def7c70f
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'dw FatoIES'.IdDimLocalOferta
+	toColumn: 'dw DimLocalOferta'.IdDimLocalOferta
+

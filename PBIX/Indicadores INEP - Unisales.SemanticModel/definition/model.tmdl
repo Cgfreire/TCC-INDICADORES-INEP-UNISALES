@@ -1,0 +1,26 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["dw DimAnoCenso","dw DimCurso","dw DimEnderecoInstituicao","dw DimInstituicao","dw DimLocalOferta","dw FatoCursos","dw FatoIES"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.144.878.0 (25.06)+9cca29236de5114792f4d7188221f91ad4a5cc50
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table 'dw DimAnoCenso'
+ref table 'dw DimCurso'
+ref table 'dw DimEnderecoInstituicao'
+ref table 'dw DimInstituicao'
+ref table 'dw DimLocalOferta'
+ref table 'dw FatoCursos'
+ref table 'dw FatoIES'
+
+ref cultureInfo pt-BR
+

@@ -1,0 +1,500 @@
+table 'dw FatoIES'
+	lineageTag: ed67c2e5-61e1-4c29-8228-56f85930cfc0
+
+	column IdFatoIES
+		dataType: int64
+		formatString: 0
+		lineageTag: 34437b9e-75ef-4c7c-9bfd-9f9b73bec32a
+		summarizeBy: sum
+		sourceColumn: IdFatoIES
+
+		annotation SummarizationSetBy = Automatic
+
+	column IdDimInstituicao
+		dataType: int64
+		formatString: 0
+		lineageTag: 66e96cb5-641c-48fa-abff-80e29bae9669
+		summarizeBy: sum
+		sourceColumn: IdDimInstituicao
+
+		annotation SummarizationSetBy = Automatic
+
+	column IdDimEnderecoInstituicao
+		dataType: int64
+		formatString: 0
+		lineageTag: 50bee18c-46b2-48f2-8398-bec4e0b5974c
+		summarizeBy: sum
+		sourceColumn: IdDimEnderecoInstituicao
+
+		annotation SummarizationSetBy = Automatic
+
+	column IdDimAnoCenso
+		dataType: int64
+		formatString: 0
+		lineageTag: 0d254bbc-c92f-413a-9ff8-a4098247fc35
+		summarizeBy: none
+		sourceColumn: IdDimAnoCenso
+
+		annotation SummarizationSetBy = Automatic
+
+	column IdDimLocalOferta
+		dataType: int64
+		formatString: 0
+		lineageTag: 4fa7842e-2f78-4dfa-b873-d344b7f98e77
+		summarizeBy: none
+		sourceColumn: IdDimLocalOferta
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_TEC_TOTAL
+		dataType: int64
+		formatString: 0
+		lineageTag: 29d1883b-0d8e-40fa-b2a4-1336b91dfe05
+		summarizeBy: sum
+		sourceColumn: QT_TEC_TOTAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_TEC_FUNDAMENTAL_INCOMP_FEM
+		dataType: int64
+		formatString: 0
+		lineageTag: da6bd126-93f9-4ec8-b372-69ad0c9f09b8
+		summarizeBy: sum
+		sourceColumn: QT_TEC_FUNDAMENTAL_INCOMP_FEM
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_TEC_FUNDAMENTAL_INCOMP_MASC
+		dataType: int64
+		formatString: 0
+		lineageTag: 25f356b9-e2c9-41d9-ba30-45aac9a8311f
+		summarizeBy: sum
+		sourceColumn: QT_TEC_FUNDAMENTAL_INCOMP_MASC
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_TEC_FUNDAMENTAL_COMP_FEM
+		dataType: int64
+		formatString: 0
+		lineageTag: b8c5c890-8ca4-4acd-b9e1-13b48c456b29
+		summarizeBy: sum
+		sourceColumn: QT_TEC_FUNDAMENTAL_COMP_FEM
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_TEC_FUNDAMENTAL_COMP_MASC
+		dataType: int64
+		formatString: 0
+		lineageTag: 08af3167-0491-403f-b266-e9202134a715
+		summarizeBy: sum
+		sourceColumn: QT_TEC_FUNDAMENTAL_COMP_MASC
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_TEC_MEDIO_FEM
+		dataType: int64
+		formatString: 0
+		lineageTag: 65e6c826-c1b1-43e4-8ba5-f1df31b8760e
+		summarizeBy: sum
+		sourceColumn: QT_TEC_MEDIO_FEM
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_TEC_MEDIO_MASC
+		dataType: int64
+		formatString: 0
+		lineageTag: 6569cfa9-24ba-4c99-88d7-2f43093fbf84
+		summarizeBy: sum
+		sourceColumn: QT_TEC_MEDIO_MASC
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_TEC_SUPERIOR_FEM
+		dataType: int64
+		formatString: 0
+		lineageTag: ec3f6620-b932-4d77-a80f-0137a161f50b
+		summarizeBy: sum
+		sourceColumn: QT_TEC_SUPERIOR_FEM
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_TEC_SUPERIOR_MASC
+		dataType: int64
+		formatString: 0
+		lineageTag: 7b38beea-846f-4583-9d14-37422c67395e
+		summarizeBy: sum
+		sourceColumn: QT_TEC_SUPERIOR_MASC
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_TEC_ESPECIALIZACAO_FEM
+		dataType: int64
+		formatString: 0
+		lineageTag: 2286f61f-49a6-43eb-b32c-5f26554730cb
+		summarizeBy: sum
+		sourceColumn: QT_TEC_ESPECIALIZACAO_FEM
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_TEC_ESPECIALIZACAO_MASC
+		dataType: int64
+		formatString: 0
+		lineageTag: 7b33bddd-8e4d-4fdc-9db1-41a4f2909a3c
+		summarizeBy: sum
+		sourceColumn: QT_TEC_ESPECIALIZACAO_MASC
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_TEC_MESTRADO_FEM
+		dataType: int64
+		formatString: 0
+		lineageTag: 2f0cb6bd-446c-40bf-81f6-1b77ded167fb
+		summarizeBy: sum
+		sourceColumn: QT_TEC_MESTRADO_FEM
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_TEC_MESTRADO_MASC
+		dataType: int64
+		formatString: 0
+		lineageTag: 8b377386-b37e-4e3c-a527-254af1154c34
+		summarizeBy: sum
+		sourceColumn: QT_TEC_MESTRADO_MASC
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_TEC_DOUTORADO_FEM
+		dataType: int64
+		formatString: 0
+		lineageTag: 56dffd35-c411-4bb7-a2dc-8257c3e4eef8
+		summarizeBy: sum
+		sourceColumn: QT_TEC_DOUTORADO_FEM
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_TEC_DOUTORADO_MASC
+		dataType: int64
+		formatString: 0
+		lineageTag: 8346f11a-967d-4348-b770-ff17df78f248
+		summarizeBy: sum
+		sourceColumn: QT_TEC_DOUTORADO_MASC
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_PERIODICO_ELETRONICO
+		dataType: int64
+		formatString: 0
+		lineageTag: 6cb40fe0-3e58-4422-80a5-5de46ac3bc30
+		summarizeBy: sum
+		sourceColumn: QT_PERIODICO_ELETRONICO
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_LIVRO_ELETRONICO
+		dataType: int64
+		formatString: 0
+		lineageTag: 121eca2e-0d17-4a24-a52e-498b849bd248
+		summarizeBy: sum
+		sourceColumn: QT_LIVRO_ELETRONICO
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_TOTAL
+		dataType: int64
+		formatString: 0
+		lineageTag: 82b7a5bf-3e50-4ce0-aefa-dc5dfae966a0
+		summarizeBy: sum
+		sourceColumn: QT_DOC_TOTAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EXE
+		dataType: int64
+		formatString: 0
+		lineageTag: a7b4d72e-f4b3-4794-87c7-8d7aacd60b81
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EXE
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_FEMI
+		dataType: int64
+		formatString: 0
+		lineageTag: 334ead0b-a2da-4493-b036-a32940446be2
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_FEMI
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_MASC
+		dataType: int64
+		formatString: 0
+		lineageTag: 8ba03126-4fa7-45e5-a4f7-94ec7a2da732
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_MASC
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_SEM_GRAD
+		dataType: int64
+		formatString: 0
+		lineageTag: 9042703d-d66d-4c09-b724-0870fc79ee78
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_SEM_GRAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_GRAD
+		dataType: int64
+		formatString: 0
+		lineageTag: c3e9337e-752b-4ff0-901d-59478ea3189d
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_GRAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_ESP
+		dataType: int64
+		formatString: 0
+		lineageTag: 4a61ebf6-1ca5-4f4f-8190-76e9b230bd39
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_ESP
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_MEST
+		dataType: int64
+		formatString: 0
+		lineageTag: 8ba43055-ede0-4914-9564-95867908661a
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_MEST
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_DOUT
+		dataType: int64
+		formatString: 0
+		lineageTag: 4660dbfe-454f-4a31-942b-f9f3747ec149
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_DOUT
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_INT
+		dataType: int64
+		formatString: 0
+		lineageTag: 04baeced-693c-4ae8-8cef-7aebb1615253
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_INT
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_INT_DE
+		dataType: int64
+		formatString: 0
+		lineageTag: 96334fcb-1931-42ef-8402-06f18b3f7985
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_INT_DE
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_INT_SEM_DE
+		dataType: int64
+		formatString: 0
+		lineageTag: 877de90a-203c-4c73-8e87-af66d66d02fb
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_INT_SEM_DE
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_PARC
+		dataType: int64
+		formatString: 0
+		lineageTag: 456543cd-8b4a-452e-98d5-bf28d46550a1
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_PARC
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_HOR
+		dataType: int64
+		formatString: 0
+		lineageTag: 2e111e0e-800c-4da0-b917-31155cb77a9d
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_HOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_0_29
+		dataType: int64
+		formatString: 0
+		lineageTag: fce45d8f-4c25-441a-8852-9b127fefa7d0
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_0_29
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_30_34
+		dataType: int64
+		formatString: 0
+		lineageTag: d5afdb9b-24cc-4f8e-816d-359c4f2513b4
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_30_34
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_35_39
+		dataType: int64
+		formatString: 0
+		lineageTag: 94ee6159-5bab-4022-8f7d-ec79d922ffe2
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_35_39
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_40_44
+		dataType: int64
+		formatString: 0
+		lineageTag: bc102164-f081-499d-8b8f-f673ffd46b9d
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_40_44
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_45_49
+		dataType: int64
+		formatString: 0
+		lineageTag: 6430b6f9-db9a-4103-8ce3-20bcca99231e
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_45_49
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_50_54
+		dataType: int64
+		formatString: 0
+		lineageTag: 0175ec31-21cc-4c0f-bc28-46f0c43d8427
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_50_54
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_55_59
+		dataType: int64
+		formatString: 0
+		lineageTag: 99e5d9f5-d5db-4579-b560-02605482acbb
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_55_59
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_60_MAIS
+		dataType: int64
+		formatString: 0
+		lineageTag: 52190818-cfac-460e-aa70-d2e02f709f66
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_60_MAIS
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_BRANCA
+		dataType: int64
+		formatString: 0
+		lineageTag: 13d3170e-8ac8-4188-977d-c56e03edfdc7
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_BRANCA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_PRETA
+		dataType: int64
+		formatString: 0
+		lineageTag: 1f625592-e7bb-4421-ad17-d94eb769165e
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_PRETA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_PARDA
+		dataType: int64
+		formatString: 0
+		lineageTag: 755e6fe1-560e-4cf2-8fb7-8d14aaaeb98d
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_PARDA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_AMARELA
+		dataType: int64
+		formatString: 0
+		lineageTag: 2958e476-6e70-4c22-8947-df92cd48594d
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_AMARELA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_INDIGENA
+		dataType: int64
+		formatString: 0
+		lineageTag: 9521d7b0-464f-4b4d-ac5c-a3d8326b23f1
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_INDIGENA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_COR_ND
+		dataType: int64
+		formatString: 0
+		lineageTag: 5eebc126-f470-4b9b-9901-84c401583dc4
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_COR_ND
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_BRA
+		dataType: int64
+		formatString: 0
+		lineageTag: 57158969-17ac-4088-8cf8-8bd0422709fc
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_BRA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_EST
+		dataType: int64
+		formatString: 0
+		lineageTag: 1474579e-8a8a-414c-82cb-5be34128ddda
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_EST
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_DOC_EX_COM_DEFICIENCIA
+		dataType: int64
+		formatString: 0
+		lineageTag: 7149d517-28bf-4429-8c7f-b6b3defbd630
+		summarizeBy: sum
+		sourceColumn: QT_DOC_EX_COM_DEFICIENCIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CO_PROJETO
+		dataType: int64
+		formatString: 0
+		lineageTag: edd10872-bea4-45a3-96f8-9de9f2b3a7b3
+		summarizeBy: sum
+		sourceColumn: CO_PROJETO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'dw FatoIES' = m
+		mode: import
+		source =
+				let
+				    Fonte = Sql.Database("CAIO_G_FREIRE", "DW_INDICADORES_INEP"),
+				    dw_FatoIES = Fonte{[Schema="dw",Item="FatoIES"]}[Data]
+				in
+				    dw_FatoIES
+
+	annotation PBI_ResultType = Table
+

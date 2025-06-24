@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Indicadores INEP - Unisales"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "8d3f59ab-b839-4300-b5c6-3790d66635e6"
+  }
+}

@@ -1,0 +1,1607 @@
+table 'dw FatoCursos'
+	lineageTag: d384456f-c5a3-457d-ab07-839551217a66
+
+	column IdFatoCursos
+		dataType: int64
+		formatString: 0
+		lineageTag: 6003613d-2f0a-4caa-8cf2-25c70e53947e
+		summarizeBy: sum
+		sourceColumn: IdFatoCursos
+
+		annotation SummarizationSetBy = Automatic
+
+	column IdDimInstituicao
+		dataType: int64
+		formatString: 0
+		lineageTag: e7a655af-2c23-4b0f-8e71-026927cd7e13
+		summarizeBy: none
+		sourceColumn: IdDimInstituicao
+
+		annotation SummarizationSetBy = Automatic
+
+	column IdDimEnderecoInstituicao
+		dataType: int64
+		formatString: 0
+		lineageTag: 2ba4cf69-affd-4f61-8373-3fe93465d792
+		summarizeBy: none
+		sourceColumn: IdDimEnderecoInstituicao
+
+		annotation SummarizationSetBy = Automatic
+
+	column IdDimAnoCenso
+		dataType: int64
+		formatString: 0
+		lineageTag: b368b801-e19d-412e-a1aa-fb5736107539
+		summarizeBy: none
+		sourceColumn: IdDimAnoCenso
+
+		annotation SummarizationSetBy = Automatic
+
+	column IdDimCurso
+		dataType: int64
+		formatString: 0
+		lineageTag: 460b7785-eb42-4e00-8a5a-56171106e01c
+		summarizeBy: none
+		sourceColumn: IdDimCurso
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CURSO
+		dataType: int64
+		formatString: 0
+		lineageTag: 112eb6ac-5e92-4d2d-8e90-ea2cb70d8300
+		summarizeBy: sum
+		sourceColumn: QT_CURSO
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_VG_TOTAL
+		dataType: int64
+		formatString: 0
+		lineageTag: 3c917ab9-f2ca-4fbc-8157-6e136154581c
+		summarizeBy: sum
+		sourceColumn: QT_VG_TOTAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_VG_TOTAL_DIURNO
+		dataType: int64
+		formatString: 0
+		lineageTag: aad1cf50-0e00-47f6-a02c-065e48e15e00
+		summarizeBy: sum
+		sourceColumn: QT_VG_TOTAL_DIURNO
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_VG_TOTAL_NOTURNO
+		dataType: int64
+		formatString: 0
+		lineageTag: 037e4597-46af-4d94-a5a7-c40a3a45471c
+		summarizeBy: sum
+		sourceColumn: QT_VG_TOTAL_NOTURNO
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_VG_TOTAL_EAD
+		dataType: int64
+		formatString: 0
+		lineageTag: 0930d2d7-2216-451d-8ddd-3fffd78811ae
+		summarizeBy: sum
+		sourceColumn: QT_VG_TOTAL_EAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_VG_NOVA
+		dataType: int64
+		formatString: 0
+		lineageTag: 59addd31-5153-4fc4-8cab-e3f4dd572434
+		summarizeBy: sum
+		sourceColumn: QT_VG_NOVA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_VG_PROC_SELETIVO
+		dataType: int64
+		formatString: 0
+		lineageTag: e056f0b8-af8c-42c3-ba77-279661a10045
+		summarizeBy: sum
+		sourceColumn: QT_VG_PROC_SELETIVO
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_VG_REMANESC
+		dataType: int64
+		formatString: 0
+		lineageTag: 02ceb3d0-17cc-4793-9f8e-147b2abc6a3f
+		summarizeBy: sum
+		sourceColumn: QT_VG_REMANESC
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_VG_PROG_ESPECIAL
+		dataType: int64
+		formatString: 0
+		lineageTag: 9d6e2ed7-90cf-4f9e-a118-6340b770cb83
+		summarizeBy: sum
+		sourceColumn: QT_VG_PROG_ESPECIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_INSCRITO_TOTAL
+		dataType: int64
+		formatString: 0
+		lineageTag: d0342b43-0f88-48ca-ab53-fcda9530d98d
+		summarizeBy: sum
+		sourceColumn: QT_INSCRITO_TOTAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_INSCRITO_TOTAL_DIURNO
+		dataType: int64
+		formatString: 0
+		lineageTag: c8e1e82f-cd0c-46d8-a93c-b0146930bdbd
+		summarizeBy: sum
+		sourceColumn: QT_INSCRITO_TOTAL_DIURNO
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_INSCRITO_TOTAL_NOTURNO
+		dataType: int64
+		formatString: 0
+		lineageTag: bb0daa6b-c285-4823-92ce-5ebd49f2e670
+		summarizeBy: sum
+		sourceColumn: QT_INSCRITO_TOTAL_NOTURNO
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_INSCRITO_TOTAL_EAD
+		dataType: int64
+		formatString: 0
+		lineageTag: e8921da5-7a3e-4f1a-8127-f66c19e97e19
+		summarizeBy: sum
+		sourceColumn: QT_INSCRITO_TOTAL_EAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_INSC_VG_NOVA
+		dataType: int64
+		formatString: 0
+		lineageTag: dcd3c8f4-7312-4180-b4be-b08474482cbc
+		summarizeBy: sum
+		sourceColumn: QT_INSC_VG_NOVA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_INSC_PROC_SELETIVO
+		dataType: int64
+		formatString: 0
+		lineageTag: cbf94dae-d9d2-426a-ae65-d2fc1883d7b4
+		summarizeBy: sum
+		sourceColumn: QT_INSC_PROC_SELETIVO
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_INSC_VG_REMANESC
+		dataType: int64
+		formatString: 0
+		lineageTag: 35ff0ff0-b230-4d89-9bfe-834a4f592628
+		summarizeBy: sum
+		sourceColumn: QT_INSC_VG_REMANESC
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_INSC_VG_PROG_ESPECIAL
+		dataType: int64
+		formatString: 0
+		lineageTag: 232a2e43-e742-4d34-9920-e59270d99dd8
+		summarizeBy: sum
+		sourceColumn: QT_INSC_VG_PROG_ESPECIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING
+		dataType: int64
+		formatString: 0
+		lineageTag: 49baade5-2a43-4768-92f7-586c8dc055c4
+		summarizeBy: sum
+		sourceColumn: QT_ING
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_FEM
+		dataType: int64
+		formatString: 0
+		lineageTag: 50e7102a-5658-4673-aec3-c3475486884c
+		summarizeBy: sum
+		sourceColumn: QT_ING_FEM
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_MASC
+		dataType: int64
+		formatString: 0
+		lineageTag: 35bb7632-5a13-4923-b936-6e8a3eb7d641
+		summarizeBy: sum
+		sourceColumn: QT_ING_MASC
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_DIURNO
+		dataType: int64
+		formatString: 0
+		lineageTag: b422dbcc-7973-472a-81b8-5282f230df5f
+		summarizeBy: sum
+		sourceColumn: QT_ING_DIURNO
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_NOTURNO
+		dataType: int64
+		formatString: 0
+		lineageTag: 192840fb-1fab-4abe-96be-ee1f27aaf2fc
+		summarizeBy: sum
+		sourceColumn: QT_ING_NOTURNO
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_VG_NOVA
+		dataType: int64
+		formatString: 0
+		lineageTag: f0389ff5-e6d1-45ef-a388-281b58176d8a
+		summarizeBy: sum
+		sourceColumn: QT_ING_VG_NOVA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_VESTIBULAR
+		dataType: int64
+		formatString: 0
+		lineageTag: d65b16db-504e-46e6-974c-3ab936ab460d
+		summarizeBy: sum
+		sourceColumn: QT_ING_VESTIBULAR
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_ENEM
+		dataType: int64
+		formatString: 0
+		lineageTag: 3a96bd6c-b68f-4006-965b-964ca89aba95
+		summarizeBy: sum
+		sourceColumn: QT_ING_ENEM
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_AVALIACAO_SERIADA
+		dataType: int64
+		formatString: 0
+		lineageTag: d2bae9bf-6dc6-4401-8b4b-9b813bbdde13
+		summarizeBy: sum
+		sourceColumn: QT_ING_AVALIACAO_SERIADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_SELECAO_SIMPLIFICA
+		dataType: int64
+		formatString: 0
+		lineageTag: c3cde582-ac67-4fa6-b3c6-662a29fa88c4
+		summarizeBy: sum
+		sourceColumn: QT_ING_SELECAO_SIMPLIFICA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_EGR
+		dataType: int64
+		formatString: 0
+		lineageTag: 4d05be78-6fab-45b9-85bb-2a0cf2ee9603
+		summarizeBy: sum
+		sourceColumn: QT_ING_EGR
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_OUTRO_TIPO_SELECAO
+		dataType: int64
+		formatString: 0
+		lineageTag: 4210d1d1-6936-4c13-ac48-2b92f19ea4c5
+		summarizeBy: sum
+		sourceColumn: QT_ING_OUTRO_TIPO_SELECAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_PROC_SELETIVO
+		dataType: int64
+		formatString: 0
+		lineageTag: 427ce0a0-cfcd-457a-bc16-f80492a1de16
+		summarizeBy: sum
+		sourceColumn: QT_ING_PROC_SELETIVO
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_VG_REMANESC
+		dataType: int64
+		formatString: 0
+		lineageTag: ffe1ec99-6226-41fd-88d0-9409b18fb663
+		summarizeBy: sum
+		sourceColumn: QT_ING_VG_REMANESC
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_VG_PROG_ESPECIAL
+		dataType: int64
+		formatString: 0
+		lineageTag: bffbc826-20d8-4f6f-8f2b-07d8dd611704
+		summarizeBy: sum
+		sourceColumn: QT_ING_VG_PROG_ESPECIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_OUTRA_FORMA
+		dataType: int64
+		formatString: 0
+		lineageTag: c4f256bc-597a-4061-be6e-9d5e8c74b980
+		summarizeBy: sum
+		sourceColumn: QT_ING_OUTRA_FORMA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_0_17
+		dataType: int64
+		formatString: 0
+		lineageTag: 07890ff4-d3fb-4af0-a785-02eb30508ad1
+		summarizeBy: sum
+		sourceColumn: QT_ING_0_17
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_18_24
+		dataType: int64
+		formatString: 0
+		lineageTag: e6811467-a841-4c03-aabb-244b338c7ae9
+		summarizeBy: sum
+		sourceColumn: QT_ING_18_24
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_25_29
+		dataType: int64
+		formatString: 0
+		lineageTag: a6e5f23a-6774-4b17-9aa3-fb6693e27982
+		summarizeBy: sum
+		sourceColumn: QT_ING_25_29
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_30_34
+		dataType: int64
+		formatString: 0
+		lineageTag: 94a5c097-a14e-4fec-b7b0-bd1fe46b7287
+		summarizeBy: sum
+		sourceColumn: QT_ING_30_34
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_35_39
+		dataType: int64
+		formatString: 0
+		lineageTag: 88947708-23a0-4f46-a27d-0005533e2757
+		summarizeBy: sum
+		sourceColumn: QT_ING_35_39
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_40_49
+		dataType: int64
+		formatString: 0
+		lineageTag: 8f3bab73-5e66-4d90-ac73-2db61de457dd
+		summarizeBy: sum
+		sourceColumn: QT_ING_40_49
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_50_59
+		dataType: int64
+		formatString: 0
+		lineageTag: ea21f6b8-e119-4b8d-86b7-a3b21e645a66
+		summarizeBy: sum
+		sourceColumn: QT_ING_50_59
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_60_MAIS
+		dataType: int64
+		formatString: 0
+		lineageTag: d03f78fd-a601-4102-ab19-37c8c1ad5cfd
+		summarizeBy: sum
+		sourceColumn: QT_ING_60_MAIS
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_BRANCA
+		dataType: int64
+		formatString: 0
+		lineageTag: 582bd7d7-ace7-4c5a-8a9e-31d68a6faee9
+		summarizeBy: sum
+		sourceColumn: QT_ING_BRANCA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_PRETA
+		dataType: int64
+		formatString: 0
+		lineageTag: f624e5e0-373a-48b6-99c6-6e019feb8564
+		summarizeBy: sum
+		sourceColumn: QT_ING_PRETA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_PARDA
+		dataType: int64
+		formatString: 0
+		lineageTag: 07f5d0fd-0e18-4420-b987-f377843dd3a9
+		summarizeBy: sum
+		sourceColumn: QT_ING_PARDA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_AMARELA
+		dataType: int64
+		formatString: 0
+		lineageTag: bd142c1b-4372-4726-a7cb-b6fdc4af5336
+		summarizeBy: sum
+		sourceColumn: QT_ING_AMARELA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_INDIGENA
+		dataType: int64
+		formatString: 0
+		lineageTag: 3aa01364-b97b-47ff-99f4-407a84d5caa2
+		summarizeBy: sum
+		sourceColumn: QT_ING_INDIGENA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_CORND
+		dataType: int64
+		formatString: 0
+		lineageTag: 1554ff87-6794-46e4-b09b-302649ccd2a1
+		summarizeBy: sum
+		sourceColumn: QT_ING_CORND
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT
+		dataType: int64
+		formatString: 0
+		lineageTag: 682ece25-f4cc-4cd1-bdd8-6dec81213d5f
+		summarizeBy: sum
+		sourceColumn: QT_MAT
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_FEM
+		dataType: int64
+		formatString: 0
+		lineageTag: 14ad149d-04f7-4df2-9520-b6e0d4a59500
+		summarizeBy: sum
+		sourceColumn: QT_MAT_FEM
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_MASC
+		dataType: int64
+		formatString: 0
+		lineageTag: bf8a7da7-8a8b-4644-a9dc-7beb44a60324
+		summarizeBy: sum
+		sourceColumn: QT_MAT_MASC
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_DIURNO
+		dataType: int64
+		formatString: 0
+		lineageTag: 0cd856b9-ca02-4907-af23-52c55a015443
+		summarizeBy: sum
+		sourceColumn: QT_MAT_DIURNO
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_NOTURNO
+		dataType: int64
+		formatString: 0
+		lineageTag: 651d6244-4956-4c36-800e-269fe10a50a1
+		summarizeBy: sum
+		sourceColumn: QT_MAT_NOTURNO
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_0_17
+		dataType: int64
+		formatString: 0
+		lineageTag: b3f0b279-04b1-4f58-9a41-1b67b3f667aa
+		summarizeBy: sum
+		sourceColumn: QT_MAT_0_17
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_18_24
+		dataType: int64
+		formatString: 0
+		lineageTag: d46825fb-6400-4f89-9ce0-d7e7c66aa1af
+		summarizeBy: sum
+		sourceColumn: QT_MAT_18_24
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_25_29
+		dataType: int64
+		formatString: 0
+		lineageTag: d96208e1-f2c5-484c-a22f-ec7607e8d868
+		summarizeBy: sum
+		sourceColumn: QT_MAT_25_29
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_30_34
+		dataType: int64
+		formatString: 0
+		lineageTag: f1f84f48-879b-45f0-9d46-803072cf9924
+		summarizeBy: sum
+		sourceColumn: QT_MAT_30_34
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_35_39
+		dataType: int64
+		formatString: 0
+		lineageTag: 47d7f7df-0cb7-4949-ae02-752fc58d0c97
+		summarizeBy: sum
+		sourceColumn: QT_MAT_35_39
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_40_49
+		dataType: int64
+		formatString: 0
+		lineageTag: 4a66e32d-e43d-425b-977b-df022e5c54fa
+		summarizeBy: sum
+		sourceColumn: QT_MAT_40_49
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_50_59
+		dataType: int64
+		formatString: 0
+		lineageTag: 81946c1b-ca07-44b1-a342-4a4b61dd6103
+		summarizeBy: sum
+		sourceColumn: QT_MAT_50_59
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_60_MAIS
+		dataType: int64
+		formatString: 0
+		lineageTag: 5a5b205c-c31f-4553-99ac-720ea92e7aa3
+		summarizeBy: sum
+		sourceColumn: QT_MAT_60_MAIS
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_BRANCA
+		dataType: int64
+		formatString: 0
+		lineageTag: 06044240-2f3b-4a12-9878-4575ebcd2c64
+		summarizeBy: sum
+		sourceColumn: QT_MAT_BRANCA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_PRETA
+		dataType: int64
+		formatString: 0
+		lineageTag: 8fd3bb72-45fb-471f-bfc8-27ce0d33b726
+		summarizeBy: sum
+		sourceColumn: QT_MAT_PRETA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_PARDA
+		dataType: int64
+		formatString: 0
+		lineageTag: 73191c32-4dd4-4f98-a688-e2e70866619a
+		summarizeBy: sum
+		sourceColumn: QT_MAT_PARDA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_AMARELA
+		dataType: int64
+		formatString: 0
+		lineageTag: 435ffba9-84d5-4f50-8ec5-f3d398d9b36e
+		summarizeBy: sum
+		sourceColumn: QT_MAT_AMARELA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_INDIGENA
+		dataType: int64
+		formatString: 0
+		lineageTag: 48ddb6aa-9d00-4de9-a116-ea590f7cdc1f
+		summarizeBy: sum
+		sourceColumn: QT_MAT_INDIGENA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_CORND
+		dataType: int64
+		formatString: 0
+		lineageTag: f2623830-ae1d-4370-b775-51371caee96e
+		summarizeBy: sum
+		sourceColumn: QT_MAT_CORND
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC
+		dataType: int64
+		formatString: 0
+		lineageTag: a0685acf-97a2-4125-9686-f3eb95d55331
+		summarizeBy: sum
+		sourceColumn: QT_CONC
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_FEM
+		dataType: int64
+		formatString: 0
+		lineageTag: 1539cc00-782f-4ee8-9ae0-5fddcd2e3eb9
+		summarizeBy: sum
+		sourceColumn: QT_CONC_FEM
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_MASC
+		dataType: int64
+		formatString: 0
+		lineageTag: ea8b3e78-4f82-475f-81b5-38dc5369525a
+		summarizeBy: sum
+		sourceColumn: QT_CONC_MASC
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_DIURNO
+		dataType: int64
+		formatString: 0
+		lineageTag: 3ca2d23c-f9d8-47f2-b576-d661e913edfe
+		summarizeBy: sum
+		sourceColumn: QT_CONC_DIURNO
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_NOTURNO
+		dataType: int64
+		formatString: 0
+		lineageTag: b6549bc4-44b9-404f-b6f6-b7a49acf5ec3
+		summarizeBy: sum
+		sourceColumn: QT_CONC_NOTURNO
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_0_17
+		dataType: int64
+		formatString: 0
+		lineageTag: 25e24dfc-d0e5-41ac-b971-3e069952ecac
+		summarizeBy: sum
+		sourceColumn: QT_CONC_0_17
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_18_24
+		dataType: int64
+		formatString: 0
+		lineageTag: 7ebc5014-d973-4e1b-abdd-cee00a093857
+		summarizeBy: sum
+		sourceColumn: QT_CONC_18_24
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_25_29
+		dataType: int64
+		formatString: 0
+		lineageTag: d6637718-6b42-42fa-a4fa-cd68b971e7b9
+		summarizeBy: sum
+		sourceColumn: QT_CONC_25_29
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_30_34
+		dataType: int64
+		formatString: 0
+		lineageTag: 70e46432-db74-4aec-9175-729405df370e
+		summarizeBy: sum
+		sourceColumn: QT_CONC_30_34
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_35_39
+		dataType: int64
+		formatString: 0
+		lineageTag: dcac500c-5e11-497e-ac8c-ea8ffc66efa8
+		summarizeBy: sum
+		sourceColumn: QT_CONC_35_39
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_40_49
+		dataType: int64
+		formatString: 0
+		lineageTag: d439f5c6-2a10-4c8d-8fee-c9e0004fb5ce
+		summarizeBy: sum
+		sourceColumn: QT_CONC_40_49
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_50_59
+		dataType: int64
+		formatString: 0
+		lineageTag: c7ad5749-a269-4fd7-a462-b0f201483513
+		summarizeBy: sum
+		sourceColumn: QT_CONC_50_59
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_60_MAIS
+		dataType: int64
+		formatString: 0
+		lineageTag: 2afba442-7464-480e-831e-788aebf85282
+		summarizeBy: sum
+		sourceColumn: QT_CONC_60_MAIS
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_BRANCA
+		dataType: int64
+		formatString: 0
+		lineageTag: a51260b9-acf4-4c83-9233-802bf5e33c15
+		summarizeBy: sum
+		sourceColumn: QT_CONC_BRANCA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_PRETA
+		dataType: int64
+		formatString: 0
+		lineageTag: f46dd526-1ee3-4fa7-b37a-57cfe728b85d
+		summarizeBy: sum
+		sourceColumn: QT_CONC_PRETA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_PARDA
+		dataType: int64
+		formatString: 0
+		lineageTag: bf343d99-dfe6-4622-94c0-e2d1c75dd3e8
+		summarizeBy: sum
+		sourceColumn: QT_CONC_PARDA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_AMARELA
+		dataType: int64
+		formatString: 0
+		lineageTag: d7429fb5-5310-43a7-9b37-6fce230531bc
+		summarizeBy: sum
+		sourceColumn: QT_CONC_AMARELA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_INDIGENA
+		dataType: int64
+		formatString: 0
+		lineageTag: d37f676b-b6ac-41c2-90a1-781df434bbdc
+		summarizeBy: sum
+		sourceColumn: QT_CONC_INDIGENA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_CORND
+		dataType: int64
+		formatString: 0
+		lineageTag: 8bf6baf9-92ed-4f26-bf3f-00c3a9ef18fa
+		summarizeBy: sum
+		sourceColumn: QT_CONC_CORND
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_NACBRAS
+		dataType: int64
+		formatString: 0
+		lineageTag: 056f444a-6546-4521-b3b5-a3d656e80c7c
+		summarizeBy: sum
+		sourceColumn: QT_ING_NACBRAS
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_NACESTRANG
+		dataType: int64
+		formatString: 0
+		lineageTag: 3b9abb8d-f103-4eda-9ff2-8ec87d3422ae
+		summarizeBy: sum
+		sourceColumn: QT_ING_NACESTRANG
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_NACBRAS
+		dataType: int64
+		formatString: 0
+		lineageTag: 6ab37d23-edd6-4671-885f-948cb414ac8c
+		summarizeBy: sum
+		sourceColumn: QT_MAT_NACBRAS
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_NACESTRANG
+		dataType: int64
+		formatString: 0
+		lineageTag: 82f88780-6172-4478-a0b1-8c13c880d0c4
+		summarizeBy: sum
+		sourceColumn: QT_MAT_NACESTRANG
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_NACBRAS
+		dataType: int64
+		formatString: 0
+		lineageTag: a8b10e7c-acae-4cd2-a051-4def1d71c6b5
+		summarizeBy: sum
+		sourceColumn: QT_CONC_NACBRAS
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_NACESTRANG
+		dataType: int64
+		formatString: 0
+		lineageTag: f54f1af3-cec5-4b3d-aa32-5a22e9698780
+		summarizeBy: sum
+		sourceColumn: QT_CONC_NACESTRANG
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ALUNO_DEFICIENTE
+		dataType: int64
+		formatString: 0
+		lineageTag: a26b51f9-17c0-4811-92aa-5b0249815d51
+		summarizeBy: sum
+		sourceColumn: QT_ALUNO_DEFICIENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_DEFICIENTE
+		dataType: int64
+		formatString: 0
+		lineageTag: 01c5d049-55d3-4312-beab-7d5d0c6f4b0c
+		summarizeBy: sum
+		sourceColumn: QT_ING_DEFICIENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_DEFICIENTE
+		dataType: int64
+		formatString: 0
+		lineageTag: 2b31d77a-3e71-4081-a61a-e4208a2e3eb6
+		summarizeBy: sum
+		sourceColumn: QT_MAT_DEFICIENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_DEFICIENTE
+		dataType: int64
+		formatString: 0
+		lineageTag: 13daf1ed-d3f5-44ae-95bc-a4fb371b5d1c
+		summarizeBy: sum
+		sourceColumn: QT_CONC_DEFICIENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_FINANC
+		dataType: int64
+		formatString: 0
+		lineageTag: 8eb0c66e-b883-44eb-ae6d-45ff96b3c42c
+		summarizeBy: sum
+		sourceColumn: QT_ING_FINANC
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_FINANC_REEMB
+		dataType: int64
+		formatString: 0
+		lineageTag: 81b16fea-607b-4a4c-81fd-049d8c1ae6a2
+		summarizeBy: sum
+		sourceColumn: QT_ING_FINANC_REEMB
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_FIES
+		dataType: int64
+		formatString: 0
+		lineageTag: 0a46c64c-63a4-4c24-8a19-d684b48fe55f
+		summarizeBy: sum
+		sourceColumn: QT_ING_FIES
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_RPFIES
+		dataType: int64
+		formatString: 0
+		lineageTag: 3631bf85-063a-4760-bf03-48bea899f8b1
+		summarizeBy: sum
+		sourceColumn: QT_ING_RPFIES
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_FINANC_REEMB_OUTROS
+		dataType: int64
+		formatString: 0
+		lineageTag: 9183a86d-7a8f-42d2-8fb2-3373bcb691be
+		summarizeBy: sum
+		sourceColumn: QT_ING_FINANC_REEMB_OUTROS
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_FINANC_NREEMB
+		dataType: int64
+		formatString: 0
+		lineageTag: 43e0ffb3-926f-431a-b492-42f54099c77d
+		summarizeBy: sum
+		sourceColumn: QT_ING_FINANC_NREEMB
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_PROUNII
+		dataType: int64
+		formatString: 0
+		lineageTag: 2d2f6357-f0c8-47a4-a9af-c37cdb560321
+		summarizeBy: sum
+		sourceColumn: QT_ING_PROUNII
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_PROUNIP
+		dataType: int64
+		formatString: 0
+		lineageTag: c659b5cd-ccd7-46d5-b561-e960c4aba073
+		summarizeBy: sum
+		sourceColumn: QT_ING_PROUNIP
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_NRPFIES
+		dataType: int64
+		formatString: 0
+		lineageTag: 87ab1232-6a40-4f26-befe-e7b557a326c9
+		summarizeBy: sum
+		sourceColumn: QT_ING_NRPFIES
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_FINANC_NREEMB_OUTROS
+		dataType: int64
+		formatString: 0
+		lineageTag: b5763a0c-f7ff-4c06-8aad-34329d6d4044
+		summarizeBy: sum
+		sourceColumn: QT_ING_FINANC_NREEMB_OUTROS
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_FINANC
+		dataType: int64
+		formatString: 0
+		lineageTag: 696239bf-1249-4b54-9b08-e33c24e5ae6d
+		summarizeBy: sum
+		sourceColumn: QT_MAT_FINANC
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_FINANC_REEMB
+		dataType: int64
+		formatString: 0
+		lineageTag: 7594e9ec-1208-423c-a9b5-cf847cd450df
+		summarizeBy: sum
+		sourceColumn: QT_MAT_FINANC_REEMB
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_FIES
+		dataType: int64
+		formatString: 0
+		lineageTag: 257b9867-a733-497c-b323-d95910a3d122
+		summarizeBy: sum
+		sourceColumn: QT_MAT_FIES
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_RPFIES
+		dataType: int64
+		formatString: 0
+		lineageTag: ebfe0534-505b-4aea-8f56-8751208efb89
+		summarizeBy: sum
+		sourceColumn: QT_MAT_RPFIES
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_FINANC_REEMB_OUTROS
+		dataType: int64
+		formatString: 0
+		lineageTag: f03c42f5-2732-4fc4-b10f-9a02dd40dd70
+		summarizeBy: sum
+		sourceColumn: QT_MAT_FINANC_REEMB_OUTROS
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_FINANC_NREEMB
+		dataType: int64
+		formatString: 0
+		lineageTag: 7c2de880-b340-4d1e-858d-91ac9a2b53da
+		summarizeBy: sum
+		sourceColumn: QT_MAT_FINANC_NREEMB
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_PROUNII
+		dataType: int64
+		formatString: 0
+		lineageTag: e172a657-68e9-4be7-9650-bb4df9ed1b48
+		summarizeBy: sum
+		sourceColumn: QT_MAT_PROUNII
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_PROUNIP
+		dataType: int64
+		formatString: 0
+		lineageTag: a62a65a8-8c10-45de-94b1-a91456ac7b4e
+		summarizeBy: sum
+		sourceColumn: QT_MAT_PROUNIP
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_NRPFIES
+		dataType: int64
+		formatString: 0
+		lineageTag: 028d6eb3-e8ed-4e57-809c-32e0ca1b62a7
+		summarizeBy: sum
+		sourceColumn: QT_MAT_NRPFIES
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_FINANC_NREEMB_OUTROS
+		dataType: int64
+		formatString: 0
+		lineageTag: 4f76a5eb-270d-409d-a3e5-0331aa5912d4
+		summarizeBy: sum
+		sourceColumn: QT_MAT_FINANC_NREEMB_OUTROS
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_FINANC
+		dataType: int64
+		formatString: 0
+		lineageTag: ebaf8a54-6d88-4a9d-b1b4-a37c7cf14e9f
+		summarizeBy: sum
+		sourceColumn: QT_CONC_FINANC
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_FINANC_REEMB
+		dataType: int64
+		formatString: 0
+		lineageTag: 78696f51-8dc9-44d8-aa46-02c8ced4c321
+		summarizeBy: sum
+		sourceColumn: QT_CONC_FINANC_REEMB
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_FIES
+		dataType: int64
+		formatString: 0
+		lineageTag: 7f00fc77-2257-42f3-80db-c9e5cc32d9b5
+		summarizeBy: sum
+		sourceColumn: QT_CONC_FIES
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_RPFIES
+		dataType: int64
+		formatString: 0
+		lineageTag: 17ce726c-10e6-482a-a978-d4d7c17bfb7b
+		summarizeBy: sum
+		sourceColumn: QT_CONC_RPFIES
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_FINANC_REEMB_OUTROS
+		dataType: int64
+		formatString: 0
+		lineageTag: c0042ec8-3871-4e55-b7d7-51943c9e91b8
+		summarizeBy: sum
+		sourceColumn: QT_CONC_FINANC_REEMB_OUTROS
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_FINANC_NREEMB
+		dataType: int64
+		formatString: 0
+		lineageTag: ff25c58d-0012-4c25-b21b-828e8fdd479b
+		summarizeBy: sum
+		sourceColumn: QT_CONC_FINANC_NREEMB
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_PROUNII
+		dataType: int64
+		formatString: 0
+		lineageTag: e41f632d-235b-40fe-89e5-5f756da4402e
+		summarizeBy: sum
+		sourceColumn: QT_CONC_PROUNII
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_PROUNIP
+		dataType: int64
+		formatString: 0
+		lineageTag: 15ac1c17-c93e-4d59-8b35-daf6483012b8
+		summarizeBy: sum
+		sourceColumn: QT_CONC_PROUNIP
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_NRPFIES
+		dataType: int64
+		formatString: 0
+		lineageTag: f478ee1b-5d84-4c4d-890b-f31db74ab8db
+		summarizeBy: sum
+		sourceColumn: QT_CONC_NRPFIES
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_FINANC_NREEMB_OUTROS
+		dataType: int64
+		formatString: 0
+		lineageTag: 5bf2b5c7-f3d2-4497-b305-b24457ea5e69
+		summarizeBy: sum
+		sourceColumn: QT_CONC_FINANC_NREEMB_OUTROS
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_RESERVA_VAGA
+		dataType: int64
+		formatString: 0
+		lineageTag: 75a14344-8c73-4697-8147-7b3b7f0b2249
+		summarizeBy: sum
+		sourceColumn: QT_ING_RESERVA_VAGA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_RVREDEPUBLICA
+		dataType: int64
+		formatString: 0
+		lineageTag: 62960c73-8dc3-4138-89ae-1b7026eeda5a
+		summarizeBy: sum
+		sourceColumn: QT_ING_RVREDEPUBLICA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_RVETNICO
+		dataType: int64
+		formatString: 0
+		lineageTag: 3267e9f2-d5b8-4818-8a0e-6ca687d2686e
+		summarizeBy: sum
+		sourceColumn: QT_ING_RVETNICO
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_RVPDEF
+		dataType: int64
+		formatString: 0
+		lineageTag: a281ac27-aa5c-42be-99db-7854a0e5dcd3
+		summarizeBy: sum
+		sourceColumn: QT_ING_RVPDEF
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_RVSOCIAL_RF
+		dataType: int64
+		formatString: 0
+		lineageTag: 9915f994-175c-4a79-8845-8b5eea34e536
+		summarizeBy: sum
+		sourceColumn: QT_ING_RVSOCIAL_RF
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_RVOUTROS
+		dataType: int64
+		formatString: 0
+		lineageTag: b7533e12-b418-4b4c-a130-00744f3bf555
+		summarizeBy: sum
+		sourceColumn: QT_ING_RVOUTROS
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_RESERVA_VAGA
+		dataType: int64
+		formatString: 0
+		lineageTag: 1e1cefff-1e54-417a-b2f0-bb59095595f0
+		summarizeBy: sum
+		sourceColumn: QT_MAT_RESERVA_VAGA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_RVREDEPUBLICA
+		dataType: int64
+		formatString: 0
+		lineageTag: 6d4c2003-293b-426a-bb7d-4c6e96fa0a2e
+		summarizeBy: sum
+		sourceColumn: QT_MAT_RVREDEPUBLICA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_RVETNICO
+		dataType: int64
+		formatString: 0
+		lineageTag: 67f781d4-6bb3-4254-9797-43f953d1a7f5
+		summarizeBy: sum
+		sourceColumn: QT_MAT_RVETNICO
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_RVPDEF
+		dataType: int64
+		formatString: 0
+		lineageTag: ad60dcfa-3c31-4782-992a-80f3b58c0d83
+		summarizeBy: sum
+		sourceColumn: QT_MAT_RVPDEF
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_RVSOCIAL_RF
+		dataType: int64
+		formatString: 0
+		lineageTag: 5d90627c-0386-4738-a2be-ad0d092e7f45
+		summarizeBy: sum
+		sourceColumn: QT_MAT_RVSOCIAL_RF
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_RVOUTROS
+		dataType: int64
+		formatString: 0
+		lineageTag: 4666d7f6-7bf3-4fca-a8eb-21e69147a318
+		summarizeBy: sum
+		sourceColumn: QT_MAT_RVOUTROS
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_RESERVA_VAGA
+		dataType: int64
+		formatString: 0
+		lineageTag: eabeef9e-7a9a-4d0b-adec-f2077a82c3ec
+		summarizeBy: sum
+		sourceColumn: QT_CONC_RESERVA_VAGA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_RVREDEPUBLICA
+		dataType: int64
+		formatString: 0
+		lineageTag: 6cc72ea5-ec62-41da-8ccb-9a0d57a02d58
+		summarizeBy: sum
+		sourceColumn: QT_CONC_RVREDEPUBLICA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_RVETNICO
+		dataType: int64
+		formatString: 0
+		lineageTag: e67fe9d5-7ac8-4c60-b785-185fe76bb49f
+		summarizeBy: sum
+		sourceColumn: QT_CONC_RVETNICO
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_RVPDEF
+		dataType: int64
+		formatString: 0
+		lineageTag: 24859af3-51df-41a5-b9fe-3e1fb8f3c272
+		summarizeBy: sum
+		sourceColumn: QT_CONC_RVPDEF
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_RVSOCIAL_RF
+		dataType: int64
+		formatString: 0
+		lineageTag: 80c9e850-f36f-4143-9647-f326d328fe3a
+		summarizeBy: sum
+		sourceColumn: QT_CONC_RVSOCIAL_RF
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_RVOUTROS
+		dataType: int64
+		formatString: 0
+		lineageTag: 20a041ad-c0cb-4b0d-8943-68cbb1f24a8b
+		summarizeBy: sum
+		sourceColumn: QT_CONC_RVOUTROS
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_SIT_TRANCADA
+		dataType: int64
+		formatString: 0
+		lineageTag: b1fd3d1c-792a-41d3-bb17-21663e274699
+		summarizeBy: sum
+		sourceColumn: QT_SIT_TRANCADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_SIT_DESVINCULADO
+		dataType: int64
+		formatString: 0
+		lineageTag: 46aabd98-5b9d-4190-bad1-560368acaed6
+		summarizeBy: sum
+		sourceColumn: QT_SIT_DESVINCULADO
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_SIT_TRANSFERIDO
+		dataType: int64
+		formatString: 0
+		lineageTag: af7457c8-1637-4736-b685-9c1c5232f90c
+		summarizeBy: sum
+		sourceColumn: QT_SIT_TRANSFERIDO
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_SIT_FALECIDO
+		dataType: int64
+		formatString: 0
+		lineageTag: 1ea5503a-c360-4e37-a885-7ceac04c159c
+		summarizeBy: sum
+		sourceColumn: QT_SIT_FALECIDO
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_PROCESCPUBLICA
+		dataType: int64
+		formatString: 0
+		lineageTag: 157b3e7c-53a6-44aa-b2bc-6c5990d784f4
+		summarizeBy: sum
+		sourceColumn: QT_ING_PROCESCPUBLICA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_PROCESCPRIVADA
+		dataType: int64
+		formatString: 0
+		lineageTag: 2f627f93-9588-498b-8c35-2a0b088c82f5
+		summarizeBy: sum
+		sourceColumn: QT_ING_PROCESCPRIVADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_PROCNAOINFORMADA
+		dataType: int64
+		formatString: 0
+		lineageTag: ba6b1b5b-2a28-4b49-903c-36363a688946
+		summarizeBy: sum
+		sourceColumn: QT_ING_PROCNAOINFORMADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_PROCESCPUBLICA
+		dataType: int64
+		formatString: 0
+		lineageTag: fc0aba31-c1fc-48a2-aafa-212538545b78
+		summarizeBy: sum
+		sourceColumn: QT_MAT_PROCESCPUBLICA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_PROCESCPRIVADA
+		dataType: int64
+		formatString: 0
+		lineageTag: 958e886c-c6e3-433c-85db-8134ef68fe15
+		summarizeBy: sum
+		sourceColumn: QT_MAT_PROCESCPRIVADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_PROCNAOINFORMADA
+		dataType: int64
+		formatString: 0
+		lineageTag: ba67071b-a244-4e74-89fe-6c87c1c9c3ea
+		summarizeBy: sum
+		sourceColumn: QT_MAT_PROCNAOINFORMADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_PROCESCPUBLICA
+		dataType: int64
+		formatString: 0
+		lineageTag: 9197d562-32d5-4a8b-a23d-c1345ad5eaa0
+		summarizeBy: sum
+		sourceColumn: QT_CONC_PROCESCPUBLICA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_PROCESCPRIVADA
+		dataType: int64
+		formatString: 0
+		lineageTag: c9edb38d-957b-404c-81d7-db4835ebb80e
+		summarizeBy: sum
+		sourceColumn: QT_CONC_PROCESCPRIVADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_PROCNAOINFORMADA
+		dataType: int64
+		formatString: 0
+		lineageTag: 43901084-a0d7-4536-a052-440ff6c74d30
+		summarizeBy: sum
+		sourceColumn: QT_CONC_PROCNAOINFORMADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_PARFOR
+		dataType: int64
+		formatString: 0
+		lineageTag: ff9ddf4a-943a-46d3-a840-497e9460b103
+		summarizeBy: sum
+		sourceColumn: QT_PARFOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_PARFOR
+		dataType: int64
+		formatString: 0
+		lineageTag: c3d15efb-2363-4642-a1f9-934f67ae0237
+		summarizeBy: sum
+		sourceColumn: QT_ING_PARFOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_PARFOR
+		dataType: int64
+		formatString: 0
+		lineageTag: 9423c06f-e343-4af9-95fa-68ad9ea1549d
+		summarizeBy: sum
+		sourceColumn: QT_MAT_PARFOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_PARFOR
+		dataType: int64
+		formatString: 0
+		lineageTag: f048cd9c-e938-4866-9f34-ee69a9e86bb8
+		summarizeBy: sum
+		sourceColumn: QT_CONC_PARFOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_APOIO_SOCIAL
+		dataType: int64
+		formatString: 0
+		lineageTag: f0c3d4c3-71ae-4136-bbd4-8cd2746ebbee
+		summarizeBy: sum
+		sourceColumn: QT_APOIO_SOCIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_APOIO_SOCIAL
+		dataType: int64
+		formatString: 0
+		lineageTag: 913e859c-2bcd-4de2-9355-3f6284c676cb
+		summarizeBy: sum
+		sourceColumn: QT_ING_APOIO_SOCIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_APOIO_SOCIAL
+		dataType: int64
+		formatString: 0
+		lineageTag: 49dc7829-4a86-44b0-8696-0592d89e4c54
+		summarizeBy: sum
+		sourceColumn: QT_MAT_APOIO_SOCIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_APOIO_SOCIAL
+		dataType: int64
+		formatString: 0
+		lineageTag: 3c3d5b1e-f31e-4ed2-8006-78fcadd639c2
+		summarizeBy: sum
+		sourceColumn: QT_CONC_APOIO_SOCIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ATIV_EXTRACURRICULAR
+		dataType: int64
+		formatString: 0
+		lineageTag: 2ae837fa-6cde-44b5-89c4-187c855905b7
+		summarizeBy: sum
+		sourceColumn: QT_ATIV_EXTRACURRICULAR
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_ATIV_EXTRACURRICULAR
+		dataType: int64
+		formatString: 0
+		lineageTag: 9462c569-107b-4395-a678-0fa818f36acf
+		summarizeBy: sum
+		sourceColumn: QT_ING_ATIV_EXTRACURRICULAR
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_ATIV_EXTRACURRICULAR
+		dataType: int64
+		formatString: 0
+		lineageTag: d56513ff-c066-4894-8beb-1f61ae7ef237
+		summarizeBy: sum
+		sourceColumn: QT_MAT_ATIV_EXTRACURRICULAR
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_ATIV_EXTRACURRICULAR
+		dataType: int64
+		formatString: 0
+		lineageTag: 88fbeec2-5a58-478e-b999-a046fed56845
+		summarizeBy: sum
+		sourceColumn: QT_CONC_ATIV_EXTRACURRICULAR
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MOB_ACADEMICA
+		dataType: int64
+		formatString: 0
+		lineageTag: a52e95ec-1b21-493f-a66b-2830ca89c632
+		summarizeBy: sum
+		sourceColumn: QT_MOB_ACADEMICA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_ING_MOB_ACADEMICA
+		dataType: int64
+		formatString: 0
+		lineageTag: 153ac48b-b345-4a65-bb77-977179abd00f
+		summarizeBy: sum
+		sourceColumn: QT_ING_MOB_ACADEMICA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_MAT_MOB_ACADEMICA
+		dataType: int64
+		formatString: 0
+		lineageTag: 98e8ba75-420b-4ff4-bead-ff83dfbcf592
+		summarizeBy: sum
+		sourceColumn: QT_MAT_MOB_ACADEMICA
+
+		annotation SummarizationSetBy = Automatic
+
+	column QT_CONC_MOB_ACADEMICA
+		dataType: int64
+		formatString: 0
+		lineageTag: 0791152b-7606-4af9-8fc5-a8df53a80693
+		summarizeBy: sum
+		sourceColumn: QT_CONC_MOB_ACADEMICA
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'dw FatoCursos' = m
+		mode: import
+		source =
+				let
+				    Fonte = Sql.Database("CAIO_G_FREIRE", "DW_INDICADORES_INEP"),
+				    dw_FatoCursos = Fonte{[Schema="dw",Item="FatoCursos"]}[Data]
+				in
+				    dw_FatoCursos
+
+	annotation PBI_ResultType = Table
+

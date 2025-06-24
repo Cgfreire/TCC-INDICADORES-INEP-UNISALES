@@ -1,0 +1,33 @@
+table 'dw DimAnoCenso'
+	lineageTag: b813f007-982c-4a8f-a105-0ce87529b83c
+
+	column IdDimAnoCenso
+		dataType: int64
+		formatString: 0
+		lineageTag: 7fabeeaf-5b44-428f-9437-fe63feb0acfe
+		summarizeBy: none
+		sourceColumn: IdDimAnoCenso
+
+		annotation SummarizationSetBy = Automatic
+
+	column AnoCenso
+		dataType: int64
+		lineageTag: 3b51abc5-1d5d-48a2-9c76-e93fbfbacb7a
+		summarizeBy: none
+		sourceColumn: AnoCenso
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'dw DimAnoCenso' = m
+		mode: import
+		source =
+				let
+				    Fonte = Sql.Database("CAIO_G_FREIRE", "DW_INDICADORES_INEP"),
+				    dw_DimAnoCenso = Fonte{[Schema="dw",Item="DimAnoCenso"]}[Data]
+				in
+				    dw_DimAnoCenso
+
+	annotation PBI_ResultType = Table
+

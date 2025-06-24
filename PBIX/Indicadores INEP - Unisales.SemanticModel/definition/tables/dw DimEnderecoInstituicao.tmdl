@@ -1,0 +1,89 @@
+table 'dw DimEnderecoInstituicao'
+	lineageTag: 27397014-fdea-4058-84f8-10859f164ccc
+
+	column IdDimEnderecoInstituicao
+		dataType: int64
+		formatString: 0
+		lineageTag: de9ea3e7-9812-4ee8-b48c-92e3c5cebc7b
+		summarizeBy: none
+		sourceColumn: IdDimEnderecoInstituicao
+
+		annotation SummarizationSetBy = Automatic
+
+	column CodigoRegiao
+		dataType: int64
+		formatString: 0
+		lineageTag: 64bbdc0c-a4ca-43ae-bc5d-943d923d5c29
+		summarizeBy: none
+		sourceColumn: CodigoRegiao
+
+		annotation SummarizationSetBy = Automatic
+
+	column Regiao
+		dataType: string
+		lineageTag: 67fd0930-22de-46a2-a102-1c63bcf31be6
+		summarizeBy: none
+		sourceColumn: Regiao
+
+		annotation SummarizationSetBy = Automatic
+
+	column Estado
+		dataType: string
+		lineageTag: 07dfdcc2-61a4-4b76-87ad-72866ea7c080
+		summarizeBy: none
+		sourceColumn: Estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column UF
+		dataType: string
+		lineageTag: 174e45d7-9d53-48c9-b1ea-25a20b923098
+		summarizeBy: none
+		sourceColumn: UF
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mesorregiao
+		dataType: string
+		lineageTag: 26705b99-909e-4aa2-a5dc-1423aa3811ec
+		summarizeBy: none
+		sourceColumn: Mesorregiao
+
+		annotation SummarizationSetBy = Automatic
+
+	column Microrregiao
+		dataType: string
+		lineageTag: 47114a04-ac0e-4dca-b496-d143ad124881
+		summarizeBy: none
+		sourceColumn: Microrregiao
+
+		annotation SummarizationSetBy = Automatic
+
+	column Municipio
+		dataType: string
+		lineageTag: 762e80bd-04b4-4443-b9c7-6b849a7fa2f6
+		summarizeBy: none
+		sourceColumn: Municipio
+
+		annotation SummarizationSetBy = Automatic
+
+	column FlCapital
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 52033a18-80d5-4bf0-a065-4295ebe798fd
+		summarizeBy: none
+		sourceColumn: FlCapital
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'dw DimEnderecoInstituicao' = m
+		mode: import
+		source =
+				let
+				    Fonte = Sql.Database("CAIO_G_FREIRE", "DW_INDICADORES_INEP"),
+				    dw_DimEnderecoInstituicao = Fonte{[Schema="dw",Item="DimEnderecoInstituicao"]}[Data]
+				in
+				    dw_DimEnderecoInstituicao
+
+	annotation PBI_ResultType = Table
+
