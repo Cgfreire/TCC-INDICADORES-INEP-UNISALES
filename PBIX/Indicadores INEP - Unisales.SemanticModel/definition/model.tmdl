@@ -10,8 +10,6 @@ annotation PBI_QueryOrder = ["dw DimAnoCenso","dw DimCurso","dw DimEnderecoInsti
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBIDesktopVersion = 2.144.878.0 (25.06)+9cca29236de5114792f4d7188221f91ad4a5cc50
-
 annotation PBI_ProTooling = ["DevMode"]
 
 ref table 'dw DimAnoCenso'
