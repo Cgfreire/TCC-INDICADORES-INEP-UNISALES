@@ -19,7 +19,6 @@ O objetivo principal deste projeto foi criar uma solução completa de **Engenha
 - [Estrutura do repositório](#estrutura-do-repositório)  
 - [Como usar / executar](#como-usar--executar)  
 - [Resultados obtidos](#resultados-obtidos)  
-- [Limitações](#limitações)  
 - [Contribuições / aplicações](#contribuições--aplicações)  
 - [Referências](#referências)  
 - [Contato](#contato)
@@ -97,13 +96,12 @@ Foi adotado o modelo **Star Schema**, composto por:
 ### **Tabelas Dimensão**
 - DimCurso  
 - DimInstituicao  
-- DimAno  
-- DimCategoriaAdministrativa  
-- DimOrganizacaoAcadêmica  
+- DimAnoCenso
+- DimEnderecoInstituicao
 
 ### **Tabelas Fato**
-- FatoDesempenhoCurso  
-- FatoDesempenhoIES  
+- FatoCursos
+- FatoIES  
 
 **Motivos da escolha:**
 
@@ -121,51 +119,42 @@ Etapas principais:
 
 1. **Extração**  
    - Leitura automatizada dos arquivos CSV do INEP  
-   - Importação para tabelas de *staging*
 
-2. **Transformação**  
-   - Padronização de colunas inconsistentes  
-   - Normalização de categorias que mudam ao longo dos anos  
+2. **Transformação** 
    - Scripts em C# para ajustes mais complexos  
+   - Padronização de colunas inconsistentes  
+   - Normalização de categorias que mudam ao longo dos anos
+   - Importação para tabelas de *staging*
    - Tratamento de datatypes
 
 3. **Carga**  
    - Inserção nas tabelas dimensionais e fatos  
-   - Execução de procedures de validação  
-
----
 
 ## 🛠 Ferramentas
 
 - **SQL Server Integration Services (SSIS)**  
 - **C#** (Script Task dentro do SSIS)  
 - **SQL Server Management Studio (SSMS)**  
+- **SQL**
 - **SQL Server** (banco principal)  
 - **Power BI**  
 - **Excel / CSV do INEP**  
-
----
 
 ## 📊 Indicadores analisados
 
 Os indicadores foram organizados em duas grandes áreas:
 
 ### **Indicadores Acadêmicos**
-- Vagas ofertadas por curso/ano  
-- Número de matriculados  
+- Vagas ofertadas por ano  
+- Número de inscritos
 - Ingressantes e concluintes  
-- Quantidade de cursos por modalidade  
-- Crescimento histórico por área  
+- Quantidade de cursos por ano 
 
 ### **Indicadores Administrativos**
-- Titulação docente  
-- Regime de trabalho  
-- Quantidade total de docentes  
-- Distribuição por área e categoria administrativa  
+- Quantidade total de docentes por sexo
+- Quantidade total de docentes por grau de instrução
 
 Esses indicadores refletem o panorama institucional do UniSales ao longo de 10 anos de Censo.
-
----
 
 ## 🗂 Estrutura do repositório
 
@@ -182,3 +171,48 @@ Esses indicadores refletem o panorama institucional do UniSales ao longo de 10 a
 
 📁 /PBIX
 └── Arquivo .pbip do Power BI
+
+## **▶ Como usar / executar**
+
+1. Clone o repositório
+2. Instale os pré-requisitos ou atualize se necessário
+3. Modifique dentro do pacote SSIS as variáveis de ambiente
+4. Execute o script SQL **Schemas e Tabelas stage (stg).sql**
+5. Execute o script SQL **Modelo de Dados Oficial (dw).sql**
+6. Crie as procedures SQL através do Script **Procedures de Carga Dimensões e Fatos.sql**
+7. No arquivo .pbip clique em **Nova Fonte de Dados**, edite a fonte de cada uma das tabelas para fazer referencia ao banco no qual os scripts anteriores foram executados.
+8. Execute o pacote SSIS e após finalização atualize o painel.
+
+**Pré-requisitos:**
+
+- SQL Server 2019+  
+- SSIS 2019+  
+- Power BI Desktop  
+
+## **📈 Resultados obtidos**
+
+- Automação completa da integração dos microdados (2013–2023)  
+- Modelo dimensional robusto para análises históricas  
+- Dashboard institucional com informações acadêmicas e administrativas  
+- Visualização clara e intuitiva para gestores e coordenadores  
+- Redução de esforço manual e padronização de dados  
+
+## **🚀 Contribuições / aplicações**
+
+- Base para pesquisas institucionais  
+- Apoio ao planejamento de novos cursos  
+- Insumo para relatórios e autoavaliação institucional  
+- Ferramenta para gestão baseada em evidências  
+- Expansão futura para dados internos do UniSales  
+
+## **📚 Referências**
+
+- INEP – Censo da Educação Superior  
+- Documentação oficial Microsoft (SSIS, SQL Server, Power BI)  
+
+## **📞 Contato**
+
+**Caio Freire**  
+Engenharia de Dados | Business Intelligence  
+Email: *caiogfreire@gmail.com*  
+LinkedIn: *https://www.linkedin.com/in/caio-gaiba-freire/*  
